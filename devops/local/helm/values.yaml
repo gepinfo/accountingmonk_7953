@@ -54,8 +54,8 @@ service:
   logins: 
     name: logins
     type: NodePort
-    port: 8012
-    targetPort: 8012
+    port: 8019
+    targetPort: 8019
 
 
 deployment:

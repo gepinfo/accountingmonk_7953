@@ -1,0 +1,556 @@
+<nav data-gjs="navbar" id="template-igjrk" class="navbar ">
+    <div id="template-intck" class="navbar-container ">
+        <div id="template-icpy" class=""></div>
+        <img id="ii0r8m" src="https://cdn.grapedrop.com/uf9ef8595751c4d1f87c91168f5d51a8c/dad97ef59d704ea0b66e4e5416c67f0a_new_logo_gep.png"
+        class="" />
+        <div id="template-iak8e" class="navbar-burger ">
+            <div id="template-iygi4" class="navbar-burger-line ">
+                <textnode id="template-i6pazt" class=""></textnode>
+            </div>
+            <div id="template-ikntj" class="navbar-burger-line ">
+                <textnode id="template-i2jngp" class=""></textnode>
+            </div>
+            <div id="template-i0h9u" class="navbar-burger-line ">
+                <textnode id="template-i5fvua" class=""></textnode>
+            </div>
+        </div>
+        <div data-gjs="navbar-items" id="template-ior1x" class="navbar-item-c ">
+            <nav data-gjs="navbar-menus" id="template-iyv8e" class="navbar-menus ">
+                <label id="template-i1jwl" class="">
+                    <textnode id="template-icr84e" class="">Home</textnode>
+                </label>
+                <label id="template-i1rhd" class="">
+                    <textnode id="template-izdzlw" class="">About</textnode>
+                </label>
+                <label id="template-ic1kh" class="btn btn-primary ">
+                    <textnode id="template-iczxji" class="">Contact us</textnode>
+                </label>
+            </nav>
+            <div id="MainMenu" class="">
+                <div id="i0xya-2" class="cell gpd-clm">
+                    <div id="i60c7-2" class="gdp-row gpd-grid">
+                        <div id="ibuiwl" class="cell gpd-clm">
+                            <img id="imvflv" />
+                        </div>
+                        <div id="icrvgp" class="cell gpd-clm" *ngIf='userId!=null'>
+                            <div id="i6vd27" class="gdp-row gpd-grid" *ngIf='userId!=null'>
+                                <div id="inlo1l" class="cell gpd-clm" *ngIf='userId!=null'> <i id="iyxitk" class="fa fa-home" aria-hidden="true"></i>
+
+                                </div>
+                                <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" *ngIf='userId!=null' [routerLink]="['/home']">{{'source.home' | i18next}}</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="icrvgp" class="cell gpd-clm" *ngIf='isAdminUser && userId!=null'>
+                            <div id="i6vd27" class="gdp-row gpd-grid" *ngIf='isAdminUser && userId!=null'>
+                                <div id="inlo1l" class="cell gpd-clm" *ngIf='isAdminUser && userId!=null'> <i id="iyxitk" class="fa fa-user" aria-hidden="true"></i>
+
+                                </div>
+                                <div id="iytw4t" class="cell gpd-clm" *ngIf='isAdminUser && userId!=null'> <a id="i9imej" class="gpd-text" [routerLink]="['/admin']">{{'source.admin'| i18next}}</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="icrvgp" class="cell gpd-clm" *ngIf="isApplicable('login') && userId">
+                            <div id="i6vd27" class="gdp-row gpd-grid" *ngIf="isApplicable('login') && userId">
+                                <div id="inlo1l" class="cell gpd-clm" *ngIf="isApplicable('login') && userId"> <i id="iyxitk" class="fa fa-folder-open" aria-hidden="true"></i>
+
+                                </div>
+                                <div id="iytw4t" class="cell gpd-clm" *ngIf="isApplicable('login') && userId"> <a id="i9imej" class="gpd-text" href="#logins" data-toggle="collapse"
+                                    data-parent="#MainMenu">logins <i class="fa fa-caret-down"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse" id="logins" *ngIf="isApplicable('login') && userId">
+                            <div id="icrvgp" class="cell gpd-clm">
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/login']">{{'source.login' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/signup']">{{'source.signup' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/dashboard']">{{'source.dashboard' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/report']">{{'source.report' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/updateaccount']">{{'source.updateaccount' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/createentries']">{{'source.createentries' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/generalledger']">{{'source.generalledger' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/template']">{{'source.template' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="icrvgp" class="cell gpd-clm" *ngIf='userId!=null'>
+                            <div id="i6vd27" class="gdp-row gpd-grid" *ngIf='userId!=null'>
+                                <div id="inlo1l" class="cell gpd-clm" *ngIf='userId!=null'> <i id="iyxitk" class="fa fa-sign-out" aria-hidden="true"></i>
+
+                                </div>
+                                <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" *ngIf='userId!=null' (click)="logout()">{{'source.logout' | i18next}}</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <li>
+                            <div id="icrvgp" class="cell gpd-clm" *ngIf='userId==null'>
+                                <div id="i6vd27" class="gdp-row gpd-grid" *ngIf='userId==null'>
+                                    <div id="inlo1l" class="cell gpd-clm" *ngIf='userId==null'> <i id="iyxitk" class="fa fa-sign-in" aria-hidden="true"></i>
+
+                                    </div>
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" *ngIf='userId==null' [routerLink]="['/login']">{{'source.login' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <div id="icrvgp" class="cell gpd-clm" *ngIf='userId!=null'>
+                            <div id="i6vd27" class="gdp-row gpd-grid" *ngIf='userId!=null'>
+                                <div id="inlo1l" class="cell gpd-clm" *ngIf='userId!=null'> <i id="iyxitk" class="fa fa-desktop" aria-hidden="true"></i>
+
+                                </div>
+                                <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" *ngIf='userId!=null' [routerLink]="['/sefscreen']">{{'source.sefscreen' | i18next}}</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <li>
+                            <div id="icrvgp" class="cell gpd-clm">
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="inlo1l" class="cell gpd-clm"> <i id="iyxitk" class="fa fa-language" aria-hidden="true"></i>
+
+                                    </div>
+                                    <div id="iytw4t" class="cell gpd-clm"> <a href="#translator" data-toggle="collapse" aria-expanded="false" id="i9imej"
+                                        class="dropdown-toggle text">
+                                                {{'source.selectLanguage' | i18next }} </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="collapse list-unstyled" id="translator">
+                                <li *ngFor="let lang of languages">
+                                    <div id="icrvgp" class="cell gpd-clm">
+                                        <div id="i6vd27" class="gdp-row gpd-grid">
+                                            <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="text" (click)='confirmLangModel(lang)'> {{'languages.' + lang | i18nextCap}}</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+                <textnode id="template-igvlj2" class=""></textnode>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'top': '100px','display': confirmLangChangeModal}">
+    <div class="modal-dialog modal-sm" role="dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>language change cause you to re-login</p>
+            </div>
+            <div class="modal-footer" style="padding: 5px">
+                <button type="button" (click)="confirmLangChange()" class="btn btn-default">Confirm</button>
+                <button type="button" (click)="onCloseHandled()" class="btn btn-default">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div><nav data-gjs="navbar" id="template-igjrk" class="navbar ">
+    <div id="template-intck" class="navbar-container ">
+        <div id="template-icpy" class=""></div>
+        <img id="ii0r8m" src="https://cdn.grapedrop.com/uf9ef8595751c4d1f87c91168f5d51a8c/dad97ef59d704ea0b66e4e5416c67f0a_new_logo_gep.png"
+        class="" />
+        <div id="template-iak8e" class="navbar-burger ">
+            <div id="template-iygi4" class="navbar-burger-line ">
+                <textnode id="template-i6pazt" class=""></textnode>
+            </div>
+            <div id="template-ikntj" class="navbar-burger-line ">
+                <textnode id="template-i2jngp" class=""></textnode>
+            </div>
+            <div id="template-i0h9u" class="navbar-burger-line ">
+                <textnode id="template-i5fvua" class=""></textnode>
+            </div>
+        </div>
+        <div data-gjs="navbar-items" id="template-ior1x" class="navbar-item-c ">
+            <nav data-gjs="navbar-menus" id="template-iyv8e" class="navbar-menus ">
+                <label id="template-i1jwl" class="">
+                    <textnode id="template-icr84e" class="">Home</textnode>
+                </label>
+                <label id="template-i1rhd" class="">
+                    <textnode id="template-izdzlw" class="">About</textnode>
+                </label>
+                <label id="template-ic1kh" class="btn btn-primary ">
+                    <textnode id="template-iczxji" class="">Contact us</textnode>
+                </label>
+            </nav>
+            <div id="MainMenu" class="">
+                <div id="i0xya-2" class="cell gpd-clm">
+                    <div id="i60c7-2" class="gdp-row gpd-grid">
+                        <div id="ibuiwl" class="cell gpd-clm">
+                            <img id="imvflv" />
+                        </div>
+                        <div id="icrvgp" class="cell gpd-clm" *ngIf='userId!=null'>
+                            <div id="i6vd27" class="gdp-row gpd-grid" *ngIf='userId!=null'>
+                                <div id="inlo1l" class="cell gpd-clm" *ngIf='userId!=null'> <i id="iyxitk" class="fa fa-home" aria-hidden="true"></i>
+
+                                </div>
+                                <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" *ngIf='userId!=null' [routerLink]="['/home']">{{'source.home' | i18next}}</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="icrvgp" class="cell gpd-clm" *ngIf='isAdminUser && userId!=null'>
+                            <div id="i6vd27" class="gdp-row gpd-grid" *ngIf='isAdminUser && userId!=null'>
+                                <div id="inlo1l" class="cell gpd-clm" *ngIf='isAdminUser && userId!=null'> <i id="iyxitk" class="fa fa-user" aria-hidden="true"></i>
+
+                                </div>
+                                <div id="iytw4t" class="cell gpd-clm" *ngIf='isAdminUser && userId!=null'> <a id="i9imej" class="gpd-text" [routerLink]="['/admin']">{{'source.admin'| i18next}}</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="icrvgp" class="cell gpd-clm" *ngIf="isApplicable('login') && userId">
+                            <div id="i6vd27" class="gdp-row gpd-grid" *ngIf="isApplicable('login') && userId">
+                                <div id="inlo1l" class="cell gpd-clm" *ngIf="isApplicable('login') && userId"> <i id="iyxitk" class="fa fa-folder-open" aria-hidden="true"></i>
+
+                                </div>
+                                <div id="iytw4t" class="cell gpd-clm" *ngIf="isApplicable('login') && userId"> <a id="i9imej" class="gpd-text" href="#logins" data-toggle="collapse"
+                                    data-parent="#MainMenu">logins <i class="fa fa-caret-down"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse" id="logins" *ngIf="isApplicable('login') && userId">
+                            <div id="icrvgp" class="cell gpd-clm">
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/login']">{{'source.login' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/signup']">{{'source.signup' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/dashboard']">{{'source.dashboard' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/report']">{{'source.report' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/updateaccount']">{{'source.updateaccount' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/createentries']">{{'source.createentries' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/generalledger']">{{'source.generalledger' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/template']">{{'source.template' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="icrvgp" class="cell gpd-clm" *ngIf='userId!=null'>
+                            <div id="i6vd27" class="gdp-row gpd-grid" *ngIf='userId!=null'>
+                                <div id="inlo1l" class="cell gpd-clm" *ngIf='userId!=null'> <i id="iyxitk" class="fa fa-sign-out" aria-hidden="true"></i>
+
+                                </div>
+                                <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" *ngIf='userId!=null' (click)="logout()">{{'source.logout' | i18next}}</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <li>
+                            <div id="icrvgp" class="cell gpd-clm" *ngIf='userId==null'>
+                                <div id="i6vd27" class="gdp-row gpd-grid" *ngIf='userId==null'>
+                                    <div id="inlo1l" class="cell gpd-clm" *ngIf='userId==null'> <i id="iyxitk" class="fa fa-sign-in" aria-hidden="true"></i>
+
+                                    </div>
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" *ngIf='userId==null' [routerLink]="['/login']">{{'source.login' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <div id="icrvgp" class="cell gpd-clm" *ngIf='userId!=null'>
+                            <div id="i6vd27" class="gdp-row gpd-grid" *ngIf='userId!=null'>
+                                <div id="inlo1l" class="cell gpd-clm" *ngIf='userId!=null'> <i id="iyxitk" class="fa fa-desktop" aria-hidden="true"></i>
+
+                                </div>
+                                <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" *ngIf='userId!=null' [routerLink]="['/sefscreen']">{{'source.sefscreen' | i18next}}</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <li>
+                            <div id="icrvgp" class="cell gpd-clm">
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="inlo1l" class="cell gpd-clm"> <i id="iyxitk" class="fa fa-language" aria-hidden="true"></i>
+
+                                    </div>
+                                    <div id="iytw4t" class="cell gpd-clm"> <a href="#translator" data-toggle="collapse" aria-expanded="false" id="i9imej"
+                                        class="dropdown-toggle text">
+                                                {{'source.selectLanguage' | i18next }} </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="collapse list-unstyled" id="translator">
+                                <li *ngFor="let lang of languages">
+                                    <div id="icrvgp" class="cell gpd-clm">
+                                        <div id="i6vd27" class="gdp-row gpd-grid">
+                                            <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="text" (click)='confirmLangModel(lang)'> {{'languages.' + lang | i18nextCap}}</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+                <textnode id="template-igvlj2" class=""></textnode>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'top': '100px','display': confirmLangChangeModal}">
+    <div class="modal-dialog modal-sm" role="dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>language change cause you to re-login</p>
+            </div>
+            <div class="modal-footer" style="padding: 5px">
+                <button type="button" (click)="confirmLangChange()" class="btn btn-default">Confirm</button>
+                <button type="button" (click)="onCloseHandled()" class="btn btn-default">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div><nav data-gjs="navbar" id="template-igjrk" class="navbar ">
+    <div id="template-intck" class="navbar-container ">
+        <div id="template-icpy" class=""></div>
+        <img id="ii0r8m" src="https://cdn.grapedrop.com/uf9ef8595751c4d1f87c91168f5d51a8c/dad97ef59d704ea0b66e4e5416c67f0a_new_logo_gep.png"
+        class="" />
+        <div id="template-iak8e" class="navbar-burger ">
+            <div id="template-iygi4" class="navbar-burger-line ">
+                <textnode id="template-i6pazt" class=""></textnode>
+            </div>
+            <div id="template-ikntj" class="navbar-burger-line ">
+                <textnode id="template-i2jngp" class=""></textnode>
+            </div>
+            <div id="template-i0h9u" class="navbar-burger-line ">
+                <textnode id="template-i5fvua" class=""></textnode>
+            </div>
+        </div>
+        <div data-gjs="navbar-items" id="template-ior1x" class="navbar-item-c ">
+            <nav data-gjs="navbar-menus" id="template-iyv8e" class="navbar-menus ">
+                <label id="template-i1jwl" class="">
+                    <textnode id="template-icr84e" class="">Home</textnode>
+                </label>
+                <label id="template-i1rhd" class="">
+                    <textnode id="template-izdzlw" class="">About</textnode>
+                </label>
+                <label id="template-ic1kh" class="btn btn-primary ">
+                    <textnode id="template-iczxji" class="">Contact us</textnode>
+                </label>
+            </nav>
+            <div id="MainMenu" class="">
+                <div id="i0xya-2" class="cell gpd-clm">
+                    <div id="i60c7-2" class="gdp-row gpd-grid">
+                        <div id="ibuiwl" class="cell gpd-clm">
+                            <img id="imvflv" />
+                        </div>
+                        <div id="icrvgp" class="cell gpd-clm" *ngIf='userId!=null'>
+                            <div id="i6vd27" class="gdp-row gpd-grid" *ngIf='userId!=null'>
+                                <div id="inlo1l" class="cell gpd-clm" *ngIf='userId!=null'> <i id="iyxitk" class="fa fa-home" aria-hidden="true"></i>
+
+                                </div>
+                                <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" *ngIf='userId!=null' [routerLink]="['/home']">{{'source.home' | i18next}}</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="icrvgp" class="cell gpd-clm" *ngIf='isAdminUser && userId!=null'>
+                            <div id="i6vd27" class="gdp-row gpd-grid" *ngIf='isAdminUser && userId!=null'>
+                                <div id="inlo1l" class="cell gpd-clm" *ngIf='isAdminUser && userId!=null'> <i id="iyxitk" class="fa fa-user" aria-hidden="true"></i>
+
+                                </div>
+                                <div id="iytw4t" class="cell gpd-clm" *ngIf='isAdminUser && userId!=null'> <a id="i9imej" class="gpd-text" [routerLink]="['/admin']">{{'source.admin'| i18next}}</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="icrvgp" class="cell gpd-clm" *ngIf="isApplicable('login') && userId">
+                            <div id="i6vd27" class="gdp-row gpd-grid" *ngIf="isApplicable('login') && userId">
+                                <div id="inlo1l" class="cell gpd-clm" *ngIf="isApplicable('login') && userId"> <i id="iyxitk" class="fa fa-folder-open" aria-hidden="true"></i>
+
+                                </div>
+                                <div id="iytw4t" class="cell gpd-clm" *ngIf="isApplicable('login') && userId"> <a id="i9imej" class="gpd-text" href="#logins" data-toggle="collapse"
+                                    data-parent="#MainMenu">logins <i class="fa fa-caret-down"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse" id="logins" *ngIf="isApplicable('login') && userId">
+                            <div id="icrvgp" class="cell gpd-clm">
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/login']">{{'source.login' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/signup']">{{'source.signup' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/dashboard']">{{'source.dashboard' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/report']">{{'source.report' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/updateaccount']">{{'source.updateaccount' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/createentries']">{{'source.createentries' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/generalledger']">{{'source.generalledger' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/template']">{{'source.template' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="icrvgp" class="cell gpd-clm" *ngIf='userId!=null'>
+                            <div id="i6vd27" class="gdp-row gpd-grid" *ngIf='userId!=null'>
+                                <div id="inlo1l" class="cell gpd-clm" *ngIf='userId!=null'> <i id="iyxitk" class="fa fa-sign-out" aria-hidden="true"></i>
+
+                                </div>
+                                <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" *ngIf='userId!=null' (click)="logout()">{{'source.logout' | i18next}}</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <li>
+                            <div id="icrvgp" class="cell gpd-clm" *ngIf='userId==null'>
+                                <div id="i6vd27" class="gdp-row gpd-grid" *ngIf='userId==null'>
+                                    <div id="inlo1l" class="cell gpd-clm" *ngIf='userId==null'> <i id="iyxitk" class="fa fa-sign-in" aria-hidden="true"></i>
+
+                                    </div>
+                                    <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" *ngIf='userId==null' [routerLink]="['/login']">{{'source.login' | i18next}}</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <div id="icrvgp" class="cell gpd-clm" *ngIf='userId!=null'>
+                            <div id="i6vd27" class="gdp-row gpd-grid" *ngIf='userId!=null'>
+                                <div id="inlo1l" class="cell gpd-clm" *ngIf='userId!=null'> <i id="iyxitk" class="fa fa-desktop" aria-hidden="true"></i>
+
+                                </div>
+                                <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" *ngIf='userId!=null' [routerLink]="['/sefscreen']">{{'source.sefscreen' | i18next}}</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <li>
+                            <div id="icrvgp" class="cell gpd-clm">
+                                <div id="i6vd27" class="gdp-row gpd-grid">
+                                    <div id="inlo1l" class="cell gpd-clm"> <i id="iyxitk" class="fa fa-language" aria-hidden="true"></i>
+
+                                    </div>
+                                    <div id="iytw4t" class="cell gpd-clm"> <a href="#translator" data-toggle="collapse" aria-expanded="false" id="i9imej"
+                                        class="dropdown-toggle text">
+                                                {{'source.selectLanguage' | i18next }} </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="collapse list-unstyled" id="translator">
+                                <li *ngFor="let lang of languages">
+                                    <div id="icrvgp" class="cell gpd-clm">
+                                        <div id="i6vd27" class="gdp-row gpd-grid">
+                                            <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="text" (click)='confirmLangModel(lang)'> {{'languages.' + lang | i18nextCap}}</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+                <textnode id="template-igvlj2" class=""></textnode>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'top': '100px','display': confirmLangChangeModal}">
+    <div class="modal-dialog modal-sm" role="dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>language change cause you to re-login</p>
+            </div>
+            <div class="modal-footer" style="padding: 5px">
+                <button type="button" (click)="confirmLangChange()" class="btn btn-default">Confirm</button>
+                <button type="button" (click)="onCloseHandled()" class="btn btn-default">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>

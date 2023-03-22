@@ -224,7 +224,7 @@ services:
     image: logins-7953
     container_name: logins-7953
     ports: 
-      - 8012:8012
+      - 8019:8019
     env_file: .env
     depends_on:
       - mongo

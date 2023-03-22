@@ -1,338 +1,41 @@
-* {
-    box-sizing: border-box;
+.login-title {
+    text-align: center;
+    line-height: 300%;
+    color: #f0f8ff!important;
+    font-weight: bold;
 }
 
-body {
-    margin: 0;
-}
-
-.gjs-row {
-    display: flex;
-    justify-content: flex-start;
-    align-items: stretch;
-    flex-wrap: nowrap;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-}
-
-.gjs-cell {
-    min-height: 75px;
-    flex-grow: 1;
-    flex-basis: 100%;
-}
-
-#template-i3a4 {
-    flex-basis: 30%;
-    transform: translateX(0px)translateY(0px);
-    font-size: 20px;
-    margin: 020px020px;
-    background-color: #ffffff;
-    font-weight: 600;
-}
-
-#template-iwqv {
-    flex-basis: 70%;
-}
-
-#template-isvn {
-    padding: 0000;
-}
-
-#template-iij6 {
-    color: black;
-    width: 40%;
-}
-
-#template-ictg {
-    padding: 10px;
-    color: #060606;
-    font-family: Helveticasans-serif;
-    font-size: 27px;
+.text-align-left {
     text-align: center;
 }
 
-#template-ijc9 {
-    display: flex;
-    justify-content: center;
+.login-label {
+    color: #fff!important;
 }
 
-#template-ihzr {
-    padding: 0000;
-}
-
-#template-i5e9 {
-    color: black;
-    width: 50%;
-    transform: translateX(0.00623321533203125px)translateY(0px);
-}
-
-#template-iomak {
-    display: flex;
-    min-height: auto;
-    justify-content: center;
-    margin: 10px000;
-}
-
-#template-ihxdj {
-    padding: 0000;
-    justify-content: center;
-}
-
-#template-iz9hl {
-    color: #060606;
-    font-size: 20px;
-}
-
-#template-i6c2y {
-    display: inline-block;
-    min-width: 50px;
-    color: #5971e0;
-    font-size: 20px;
-}
-
-#template-i433j {
-    color: #060606;
-    font-size: 20px;
-}
-
-#template-ir5f4 {
-    margin: 105px000;
-    font-size: 30px;
-    color: #060606;
-    font-weight: 600;
+.login-input {
+    width: 25rem;
+    height: 2rem;
     text-align: center;
-    transform: translateX(0px)translateY(8px);
+    margin-bottom: 1rem;
 }
 
-#template-i7h1i {
-    border-radius: 10px10px10px10px;
-    border: 1pxsolid#d0d0d0;
-    background-color: #ffffff;
-    margin: 40px010px0;
-    color: #d5d5d5;
+.login-btn-width {
+    width: 7rem;
+    margin-top: 1rem;
+    background-color: #00008b!important;
+    color: #f0f8ff!important;
+    border: none;
 }
 
-#template-ioido {
-    border-radius: 10px10px10px10px;
-    border: 1pxsolid#d0d0d0;
-    background-color: #ffffff;
-    margin: 20px010px0;
-    color: #d5d5d5;
-}
-
-#template-itchi {
-    min-height: auto;
-    margin: 20px010px0;
-}
-
-#template-io2af {
-    padding: 0000;
-    flex-wrap: wrap;
-}
-
-#template-irlwj {
-    width: 100%;
-    background-color: #01bdfc;
-    border: 0solid#01bdfc;
-    border-radius: 10px10px10px10px;
-}
-
-#template-iqltn {
-    width: 100%;
-    margin: 10px010px0;
-    border: 1pxsolid#d0d0d0;
-    background-color: #ffffff;
-    color: #040404;
-    border-radius: 10px10px10px10px;
-}
-
-#template-ish4c {
-    min-height: auto;
-}
-
-#template-i6wik {
-    padding: 0000;
-}
-
-#template-iylo1 {
-    min-height: auto;
-    display: flex;
+.signup-text-color {
+    color: #f0f8ff!important;
+    font-weight: bold;
     text-align: center;
-    align-self: center;
-    justify-content: center;
-    border-radius: 10px10px10px10px;
-    border: 1pxsolid#d0d0d0;
-    align-items: center;
-    margin: 30px000;
 }
 
-#template-igpg3 {
-    color: black;
-    width: 40px;
-    height: 40px;
-}
-
-#template-icpnj {
-    text-align: center;
-    align-items: center;
-    font-size: 16px;
-    color: #040404;
-    font-weight: 400;
-}
-
-#template-i9mea {
-    min-height: auto;
-}
-
-#template-ii091 {
-    min-height: auto;
-    display: flex;
-}
-
-#template-ib1qk {
-    min-height: auto;
-    justify-content: flex-end;
-    display: flex;
-}
-
-#template-ibsp9 {
-    color: #8f8f8f;
-    margin: 00010px;
-    font-size: 16px;
-}
-
-#template-ixu0e {
-    color: #5971e0;
-    font-size: 16px;
-}
-
-#template-ia9di {
-    width: 25px;
-    height: 25px;
-    border: 1pxsolid#dfdddd;
-    background-color: #ffffff;
-    border-radius: 10px10px10px10px;
-}
-
-#template-ix4oh {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-#template-ix5t6 {
-    padding: 0000;
-    margin: 20px000;
-}
-
-#template-iiqxh {
-    min-height: auto;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-#template-iq5o5 {
-    padding: 0000;
-    align-items: center;
-    justify-content: space-around;
-    margin: 20px010px0;
-}
-
-#template-iv7wh {
-    color: black;
-    width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-@media(max-width:768px) {
-    .gjs-row {
-        flex-wrap: wrap;
-    }
-}
-
-table.table-bordered {
-    border: 0px solid black;
-    margin-top: 20px;
-    text-align: left;
-    table-layout: auto;
-    color: black;
-    background-color: rgb(255, 255, 255);
-    padding: 0 0px;
-}
-
-table.table-bordered>thead>tr>th {
-    border: 0px solid black;
-    padding: 15px 15px;
-    color: rgb(255, 255, 255);
-    background-color: #285575;
-    margin: 0px 5px;
-}
-
-.table-striped>tbody>tr:nth-child(even)>td,
-    .table-striped>tbody>tr:nth-child(even)>th {
-    background-color: #dcdcdc;
-    color: black;
-}
-
-.table-curved {
-    border-radius: 8px;
-    th: first-child {
-            border-radius: 8px 0 0 8px;
-}
-
-th:last-child {
-    border-radius: 0 8px 8px 0;
-}
-    }
-
-table.table-bordered>tbody>tr>td {
-    border: 0px solid black;
-    margin: 0px 0px;
-    padding: 15px;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-}
-
-h2 {
-    margin: 20px;
-}
-
-.table-striped {
-    border-radius: 7px;
-}
-
-.tableBg {
-    padding: 10px;
-    margin: 20px;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    box-shadow: 0 3px 6px 0 rgba(36, 35, 35, 0.2);
-    border: #ECECEC 1px solid;
-}
-
-#template-irca {
-    padding-top: 10px;
-    padding-right: 2px;
-    padding-left: 2px;
-    padding-bottom: 10px;
-}
-
-#myGrid {
-    width: auto;
-    height: 32%;
-}
-
-.bottomPage {
-    margin: 20px;
+.span-text-link {
+    color: #00008b !important;
+    cursor: pointer;
+    text-decoration: underline;
 }

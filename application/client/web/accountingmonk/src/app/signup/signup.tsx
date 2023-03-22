@@ -1,113 +1,137 @@
-import React from 'react';
-import { AgGridReact } from 'ag-grid-react';
-import {Link} from 'react-router-dom';
-import {Upload} from "../../shared/shared.service";
-import Select from "react-select";
+import React, { useEffect, useState } from "react";
 import "./signup.scss";
-import  {service}   from './signup.service';
+import axios from "axios";
+import { Button, Form, FormGroup, Label, Input, FormText } from "reactstrap";
+import { register } from "./signup.services";
+import logo from "../../assets/img/Group2704.png";
 
-class Signup extends React.Component<any, any> {
-    test = new service ("");
-    constructor(props:any){
-    super(props);
-    this.state={
-    name : {
-    name: '',
-    },
-    
-    rowData :[]
-    } }
+const Signup = (props: any) => {
+  const [formData, setFormData] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    password: "",
+  });
+  const [visibility, setvisibility] = useState(false);
 
+  const { firstname, lastname, email, password } = formData;
 
-    handlechange = (e: any) => {
-    if(e?.target){
-    this.setState({ name: { ...this.state.name, [e.target.name]: e.target.value } })
-    }
-    }
+  const onChange = (e: any) =>
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+   const showPassword = () => {setvisibility(!visibility)};
+  const onSubmit = async (e: any) => {
+    e.preventDefault();
+    register(formData, (res: any) => {
+      console.log(res.data);
+      if (res.data._id) {
+        window.location.href = "/login";
+      } else {
+        console.log("sign in err", res.data);
+      }
+    });
+  };
 
+  useEffect(() => {});
 
-    componentDidMount() {
-    this.state.name.created_by = sessionStorage.getItem('email')||'{}';
-    }
-
-    render(){
-    return(
-    <>
-        <h2 className="screen-align">signup</h2>
-        <div id="template-ibur" className="gjs-row">
-    <div id="template-io7z" className="gjs-cell">
-        <div id="template-i4t79">Sign Up</div>
-        <div id="template-iohcl" className="gjs-row">
-            <div id="template-ivffn" className="gjs-cell">
-                <div id="template-i1ve4">Already Have A 10Decoders Book Account?</div>
-            </div>
-        </div>
-    </div>
-    <div id="template-i8bxf" className="gjs-cell">
-        <div id="template-iho1t" className="gjs-row">
-            <div id="template-inbe9" className="gjs-cell">
-                <input placeholder="Company Name" id="template-iz97l" className="input form-control "
-                />
-            </div>
-            <div id="template-ijga5" className="gjs-cell">
-                <input placeholder="Email Address" id="template-i2b9o" className="input form-control "
-                />
-            </div>
-        </div>
-        <div id="template-idvp8" className="gjs-row">
-            <div id="template-imvki" className="gjs-cell">
-                <input placeholder="Mobile Number" id="template-iqcdl" className="input form-control "
-                />
-            </div>
-            <div id="template-iai8w" className="gjs-cell">
-                <input placeholder="Password" id="template-iyw6i" className="input form-control "
-                />
-            </div>
-        </div>
-        <div id="template-ioqpx" className="gjs-row">
-            <div id="template-ifuh7" className="gjs-cell">
-                <select id="template-ixis9" className="select ">
-                    <option value="" id="template-i328y">- Select option -</option>
-                    <option id="template-i5tdh">Option 1</option>
-                </select>
-            </div>
-            <div id="template-iwboh" className="gjs-cell">
-                <select id="template-il7xq" className="select ">
-                    <option value="" id="template-i2o5i">- Select option -</option>
-                    <option id="template-iwb4h">Option 1</option>
-                </select>
-            </div>
-        </div>
-        <div id="template-iyiz8" className="gjs-row">
-            <div id="template-izhoo" className="gjs-cell">
-                <div id="template-issvi">Your data will be in INDIA data center.</div>
-                <div id="template-ilwtk"
-                className="gjs-row">
-                    <div id="template-ixp92" className="gjs-cell">
-                        <input type="checkbox" id="template-iuhli" className="checkbox form-control "
-                        />
-                        <div id="template-ikbml">I Agree To The</div>
-                        <div id="template-i0y5g">and</div>
+  return (
+    <div className="background-images">
+      <div className="container left_align">
+        <div className="row">
+          <div className="col-lg-4"></div>
+          <div className="col-lg-4">
+            <div className="main">
+              <div className="geppetto-img">
+                <img src={logo} />
+              </div>
+              <div className="login-Wrappe text-left ">
+                <h3 className="login-title">Please Register</h3>
+                <div className="text-align-left">
+                  <Form onSubmit={(e: any) => onSubmit(e)}>
+                    <FormGroup>
+                      <Label className="login-label" for="firstname">
+                        First Name
+                      </Label>
+                      <Input
+                        className="login-input"
+                        type="text"
+                        name="firstname"
+                        value={firstname}
+                        minLength={1}
+                        id="firstname"
+                        placeholder="First Name"
+                        onChange={(e: any) => onChange(e)}
+                      />
+                    </FormGroup>
+                    <FormGroup>
+                      <Label className="login-label" for="lastname">
+                        Last Name
+                      </Label>
+                      <Input
+                        className="login-input"
+                        type="text"
+                        name="lastname"
+                        value={lastname}
+                        id="lastname"
+                        placeholder="Last Name"
+                        onChange={(e: any) => onChange(e)}
+                      />
+                    </FormGroup>
+                    <FormGroup>
+                      <Label className="login-label" for="email">
+                        Email
+                      </Label>
+                      <Input
+                        className="login-input"
+                        type="text"
+                        name="email"
+                        value={email}
+                        id="email"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        placeholder="Email"
+                        onChange={(e: any) => onChange(e)}
+                      />
+                    </FormGroup>
+                    <FormGroup>
+                      <Label className="login-label" for="password">
+                        Password
+                      </Label>
+                      <Input
+                        className="login-input"
+                        type={visibility ? "text" : "password"}
+                        name="password"
+                        value={password}
+                        id="password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        placeholder="password"
+                        onChange={(e: any) => onChange(e)}
+                      />
+                      <span
+                        style={{ cursor: "pointer",opacity: 0.5 }}
+                        onClick={showPassword}
+                      >
+                        showPassword
+                      </span>
+                    </FormGroup>
+                    <div className="text-center mb-3">
+                      <Button className="login-btn-width">Submit</Button>
                     </div>
+                  </Form>
                 </div>
+                <span className="signup-text-color">
+                  Already Registered?{" "}
+                  <span
+                    className="span-text-link"
+                    onClick={() => props.history.push("/login")}
+                  >
+                    Login Here
+                  </span>
+                </span>
+              </div>
             </div>
-            <div id="template-ily9v" className="gjs-cell">
-                <button id="template-if1j8" className="button btn btn-primary ">Create Account</button>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <div id="template-is0h" className="gjs-cell"></div>
-    <div id="template-ine2o" className="gjs-cell">
-        <div id="template-igolf" className="gjs-row">
-            <div id="template-i7mju" className="gjs-cell">
-                <div id="template-irhkf">Sign In With Google</div>
-            </div>
-        </div>
-    </div>
-</div>
-    </>
-    );
-    };
-    };
-
-    export default Signup;
+  );
+};
+export default Signup;
