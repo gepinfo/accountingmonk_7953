@@ -1,0 +1,395 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.gjs-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.gjs-cell {
+    min-height: 75px;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+#template-ie78j {
+    padding: 0000;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+#template-iosaq {
+    flex-basis: 85%;
+    height: auto;
+    min-height: auto;
+    font-family: Helveticasans-serif;
+    border: 0solidblack;
+}
+
+#template-iqgk7 {
+    flex-basis: 5%;
+    border: 1pxsolid#dbdbdb;
+    background-color: #fdfdfd;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+#template-inkrc {
+    padding: 0000;
+}
+
+#template-iqgaq {
+    display: flex;
+    justify-content: center;
+}
+
+#template-ik4kt {
+    padding: 0000;
+    flex-wrap: wrap;
+    margin: 50px000;
+}
+
+#template-imtoj {
+    color: black;
+    width: 80px;
+    display: block;
+    height: 80px;
+}
+
+#template-iakca {
+    color: black;
+    width: 80px;
+    display: block;
+    height: 80px;
+}
+
+#template-ibw7q {
+    display: flex;
+    justify-content: center;
+}
+
+#template-iy2y4 {
+    color: black;
+    width: 80px;
+    display: block;
+    height: 80px;
+}
+
+#template-ipq86 {
+    display: flex;
+    justify-content: center;
+}
+
+#template-i8w4d {
+    color: black;
+    width: 80px;
+    display: block;
+    height: 80px;
+}
+
+#template-iq3ej {
+    display: flex;
+    justify-content: center;
+}
+
+#template-ipi1x {
+    border: 1pxsolid#e2e2e2;
+    display: block;
+    min-height: auto;
+}
+
+#template-ic6gj {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: auto;
+}
+
+#template-iovaj {
+    min-height: auto;
+}
+
+#template-i2off {
+    color: #0e0e0e;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Helveticasans-serif;
+}
+
+#template-inukl {
+    padding: 0000;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin: 10px010px0;
+}
+
+#template-ifron {
+    width: 40%;
+}
+
+#template-ipwzs {
+    padding: 10px;
+    margin: 020px00;
+    color: #1a1a1a;
+    font-family: Helveticasans-serif;
+}
+
+#template-i3dbj {
+    border-radius: 10px10px10px10px;
+    width: 50px;
+    height: 50px;
+    margin: 020px020px;
+}
+
+#template-iq79g {
+    display: flex;
+    justify-content: center;
+}
+
+#template-i1dvi {
+    color: black;
+    width: 80px;
+    height: 80px;
+}
+
+#template-iaz26 {
+    padding: 0000;
+    display: block;
+    margin: 30px30px30px30px;
+    background-color: #ffffff;
+}
+
+#template-idtp9 {
+    display: flex;
+    min-height: auto;
+    justify-content: flex-start;
+    margin: 030px00;
+}
+
+#template-ieu27 {
+    padding: 0000;
+}
+
+#template-i5pgo {
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+#template-i7shl {
+    margin: 30px30px30px30px;
+    background-color: #ffffff;
+}
+
+#template-ign8jo {
+    padding: 10px;
+}
+
+#template-ihrjg {
+    display: block;
+    margin: 020px020px;
+    min-height: auto;
+}
+
+#template-i8bfg {
+    padding: 0000;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    flex-wrap: wrap;
+}
+
+#template-izpdk {
+    padding: 0000;
+    margin: 20px000;
+}
+
+#myGrid {
+    width: auto;
+    height: 50%;
+}
+
+#template-i87mr {
+    flex-wrap: nowrap;
+    padding: 0000;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+#template-ih1rx {
+    margin: 010px00;
+}
+
+#template-i6jv3 {
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+#template-itzm7 {
+    border: 1pxsolid#d0d0d0;
+    background-color: #ffffff;
+}
+
+#template-i12fi {
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+#template-iefou {
+    border: 1pxsolid#d0d0d0;
+    background-color: #ffffff;
+}
+
+#template-i8jzt {
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+#template-id83y {
+    border: 1pxsolid#d0d0d0;
+    background-color: #ffffff;
+}
+
+#template-idbpf {
+    margin: 010px00;
+}
+
+#template-ihbnl {
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+#template-igcq6 {
+    flex-wrap: nowrap;
+    padding: 0000;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+#template-iaam8 {
+    margin: 010px00;
+}
+
+#template-iym6i {
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+#template-iullz {
+    height: 52%;
+}
+
+#template-i4i26 {
+    width: 24%;
+    height: 52%;
+}
+
+@media(max-width:768px) {
+    .gjs-row {
+        flex-wrap: wrap;
+    }
+}
+
+table.table-bordered {
+    border: 0px solid black;
+    margin-top: 20px;
+    text-align: left;
+    table-layout: auto;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    padding: 0 0px;
+}
+
+table.table-bordered>thead>tr>th {
+    border: 0px solid black;
+    padding: 15px 15px;
+    color: rgb(255, 255, 255);
+    background-color: #285575;
+    margin: 0px 5px;
+}
+
+.table-striped>tbody>tr:nth-child(even)>td,
+    .table-striped>tbody>tr:nth-child(even)>th {
+    background-color: #dcdcdc;
+    color: black;
+}
+
+.table-curved {
+    border-radius: 8px;
+    th: first-child {
+            border-radius: 8px 0 0 8px;
+}
+
+th:last-child {
+    border-radius: 0 8px 8px 0;
+}
+    }
+
+table.table-bordered>tbody>tr>td {
+    border: 0px solid black;
+    margin: 0px 0px;
+    padding: 15px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h2 {
+    margin: 20px;
+}
+
+.table-striped {
+    border-radius: 7px;
+}
+
+.tableBg {
+    padding: 10px;
+    margin: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(36, 35, 35, 0.2);
+    border: #ECECEC 1px solid;
+}
+
+#template-irca {
+    padding-top: 10px;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 10px;
+}
+
+#myGrid {
+    width: auto;
+    height: 32%;
+}
+
+.bottomPage {
+    margin: 20px;
+}
